@@ -26,7 +26,7 @@ About
 1. 部分含路径的设置由muttrc迁移到priv.rc方便统一配置
 2. 编码设置
 3. 收信软件fectmail改为getmail4，更改缘由：http://pyropus.ca/software/getmail/faq.html#faq-about-why
-4. 发件软件emstp改为msmtp，更改缘由：http://zoomquiet.org/res/scrapbook/ZqFLOSS/data/20110506155957/
+4. 发件软件esmtp改为msmtp，更改缘由：http://zoomquiet.org/res/scrapbook/ZqFLOSS/data/20110506155957/
 5. 处理邮件html内容的软件由lynx改为w3m,更改缘由：http://forum.ubuntu.org.cn/viewtopic.php?t=201736
 6. 增加部分快捷键设定（处于注释状态）
 7. 信箱所需文件夹已经新建好
