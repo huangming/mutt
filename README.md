@@ -1,16 +1,14 @@
-
 Including files
 =============
 
-README			# this file
-> 
-> .mutt/dot_muttrc        # .muttrc, link this to ~/.muttrc
-> .mutt/aliases		# there's a sample for building your alias
-> .mutt/bindings.rc	# config key bindings
-> .mutt/colors.rc		# color config
-> .mutt/mailcap		# I get this copy from the sample file
-> .mutt/postponed		# Use to store the delay mail
-> .mutt/priv.rc       # dirs and non-public stuff, (hooks, alternates, ...),you can change it to youself
+    README			# this file
+    .mutt/dot_muttrc        # .muttrc, link this to ~/.muttrc
+    .mutt/aliases		# there's a sample for building your alias
+    .mutt/bindings.rc	# config key bindings
+    .mutt/colors.rc		# color config
+    .mutt/mailcap		# I get this copy from the sample file
+    .mutt/postponed		# Use to store the delay mail
+    .mutt/priv.rc       # dirs and non-public stuff, (hooks, alternates, ...),you can change it to youself
  
 
 About
