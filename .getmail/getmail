@@ -1,9 +1,23 @@
-#!/bin/bash
-#get mail
+#!/bin/sh
 set -e
-cd ~/.getmail
-rcfiles=""
-for file in rc-* ; do
+if [ -f $HOME/.getmail/running ]; then
+  echo "getmail is already running ... (if not, remove $HOME/.getmail/running)" >&2
+  pgrep -l "getmai[l]"
+  exit 1
+else
+  echo "getmail has not been running ... " >&2
+fi
+if [ -f $HOME/.getmail/stop ]; then
+  echo "do not run getmail ... (if not, remove $HOME/.getmail/stop)" >&2
+  exit
+fi
+if [ "x$1" = "x-l" ]; then
+  exit
+fi
+rcfiles="/usr/bin/getmail"
+for file in $HOME/.getmail/config/* ; do
   rcfiles="$rcfiles --rcfile $file"
 done
-exec /usr/bin/getmail $rcfiles $@
+date -u > $HOME/.getmail/running
+eval "$rcfiles $@"
+rm $HOME/.getmail/running

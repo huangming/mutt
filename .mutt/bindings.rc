@@ -115,17 +115,20 @@
 #macro   compose "\ee"   "Fpgp -eatf " 
 
 
-
 ###########################################
 # 下面的觉得挺好，抄别人的,先注释了以后备用
 ###########################################
 
-# #send hook
-# send-hook . 'my_hdr from:dream7180@gmail.com'
-# send-hook . 'set sendmail="/usr/bin/msmtp"'
-# reply-hook . 'my_hdr reply-to:dream7180@gmail.com'
-# 
-# send-hook '~t .*@163\.com$' 'my_hdr from:dreamawake@163.co'
+# send hook
+send-hook '~t .*@gmail\.com$' 'my_hdr from:XXXXXXXXX@gmail.com'
+send-hook '~t .*@gmail\.com$' 'my_hdr reply-to:XXXXXXX@gmail.com'
+send-hook . 'set sendmail="/usr/bin/msmtp -a XXXXXXX:gmail"'
+
+reply-hook '~t .*@gmail\.com$' 'my_hdr from:XXXXXXXX@gmail.com'
+reply-hook '~t .*@gmail\.com$' 'my_hdr reply-to:XXXXXXXX@gmail.com'
+reply-hook '~t .*@gmail\.com$' 'set sendmail="/usr/bin/msmtp -a XXXXXXX:gmail"'
+
+# send-hook '~t .*@163\.com$' 'my_hdr from:dreamawake@163.com'
 # send-hook '~t .*@163\.com$' 'my_hdr reply-to:dreamawake@163.com'
 # send-hook '~t .*@163\.com$' 'set sendmail="/usr/bin/msmtp -a 163"'
 # 

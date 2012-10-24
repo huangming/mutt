@@ -1,0 +1,15 @@
+[options]
+verbose = 1
+read_all = false
+message_log = ~/.getmail/log
+
+[retriever]
+type = SimplePOP3Retriever
+server = pop3.163.com
+username = XXXXXXX@163.com
+password = *******
+
+[destination]
+type = MDA_external
+path = /usr/bin/procmail
+unixfrom = true
