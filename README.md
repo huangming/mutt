@@ -43,11 +43,14 @@ git安装:
 或者下载压缩包mutt.tar.gz安装：
 
     $ sudo apt-get install mutt msmtp getmail4 procmail wvHtml w3m 
-    $ tar xzvf mutt.tar.gz
+    $ tar -xzvf mutt.tar.gz
     $ mv mutt/* ~/
     $ ln -s ~/.mutt/dot_muttrc ~/.muttrc
-    
+
+安装完成后用编辑器打开 `~/.msmtprc` `~/procmailrc` `~/.getmail/config/getmailrc.163` `~/.getmail/config/getmailrc.gmail`
+把里面的邮箱地址、用户名、密码改为你自己的。
+
 Notes
 =====
 
-priv.rc里面的配置（主要是路径和信箱名称）可以根据自己需要更改。各种rc配置文件里面的邮箱密码改为自己的即可。多账号收件可建立多个rc文件。
+priv.rc里面的配置（主要是路径和信箱名称）可以根据自己需要更改。多用户收件是通过在`~/.getmail/config`建立多个配置文件来处理的。每个文件对应一个邮箱。而多用户发件是在`~/.msmtprc`一个文件中配置的。
