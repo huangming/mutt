@@ -19,6 +19,7 @@ About
 配置由 http://suchang.net/slack/Mutt.html 提供的配置改编而成。感谢原创作者。
 
 更改的部分有：
+
 1. 部分含路径的设置由muttrc迁移到priv.rc方便统一配置
 2. 编码设置
 3. 收信软件fectmail变为getmail4
