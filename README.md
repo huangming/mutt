@@ -40,7 +40,7 @@ git安装:
     $ git clone git://github.com/huangming/mutt.git ~/
     $ ln -s ~/.mutt/dot_muttrc ~/.muttrc
     
-或者下载压缩包mutt.tar.gz安装：
+或者下载压缩包[mutt.tar.gz](https://nodeload.github.com/huangming/mutt/tarball/master)进入包所在目录安装：
 
     $ sudo apt-get install mutt msmtp getmail4 procmail wvHtml w3m 
     $ tar -xzvf mutt.tar.gz
