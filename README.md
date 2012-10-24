@@ -15,7 +15,9 @@ About
 =====
 
 解决方案：msmtp发信，getmail4收信，procmail过滤， wvHtml w3m  处理word/html邮件内容
+
 配置由 http://suchang.net/slack/Mutt.html 提供的配置改编而成。感谢原创作者。
+
 更改的部分有：
 1. 部分含路径的设置由muttrc迁移到priv.rc方便统一配置
 2. 编码设置
@@ -43,4 +45,4 @@ git安装:
 Notes
 =====
 
-priv.rc里面的配置（主要是路径和信箱名称）可以根据自己需要更改。各种rc配置文件里面的邮箱密码改为自己的即可。
+priv.rc里面的配置（主要是路径和信箱名称）可以根据自己需要更改。各种rc配置文件里面的邮箱密码改为自己的即可。多账号收件可建立多个rc文件。
