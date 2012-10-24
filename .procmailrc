@@ -1,0 +1,9 @@
+PATH=/bin:/sbin:/usr/bin:/usr/sbin/:/usr/local/bin:/usr/local/sbin
+MAILDIR=$HOME/Mail
+DEFAULT=$MAILDIR/inbox/      # 信邮件投递位置
+VERBOSE=off
+LOGFILE=$HOME/Mail/procmail.log
+ 
+:0           # 前面的过滤规则后剩下的所有邮件都存入$MAILDIR/inbox
+* .*
+inbox/      

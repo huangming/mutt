@@ -1,0 +1,23 @@
+# muttrc personal part
+# 所有信箱文件夹必须有{cur,new,tmp}这三个子目录，请手动建。 
+set folder="~/Mail"			
+set mbox_type=Maildir
+set trash=~/Mail/trash       # 放已删除邮件
+set postponed=~/Mail/draft   # 放草稿
+set postpone=yes             # 已编辑但最后关头取消的邮件直接放草稿
+set spoolfile="~/Mail/inbox" # mutt启动后打开的信箱
+set header_cache=~/Mail/.hcache
+mailboxes +inbox +trash +draft    # 使用C更换目录然后TAB能够出现的信箱列表
+mailboxes +archive/`date +%Y-%m` +incoming/`date +%Y-%m` 
+
+set   sendmail="/usr/bin/msmtp" # 用msmtp来发送邮件
+#set  mbox=+mbox		 	# old settings
+set   mbox="+incoming/`date +%Y-%m`"	# 已读邮件自动归档位置.
+set   record="+archive/`date +%Y-%m`"	# 发送邮件保存位置archive/月-日
+
+
+# header settings   #发邮件的时候发信人和回信人自动填写的内容
+hdr_order from to cc date subject reply-to mail-followup-to # mail head order
+my_hdr From: 		 yournickname <XXXXXXX@163.com> 
+my_hdr Reply-to:	 Yournickname <XXXXXXXXXX@163.com> 	    # my Reply address:w
+

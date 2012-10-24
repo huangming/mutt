@@ -1,0 +1,18 @@
+# $Id: sample.mailcap,v 0.3 1999/02/17 11:42:43 roessler Exp $
+# adapted by sucha Sep 21, 2004
+
+
+text/enriched;  enriched.sh  ; copiousoutput
+
+image/*;  	anytopnm %s | pnmscale -xsize 80 -ysize 50 | ppmtopgm | pgmtopbm | pbmtoascii ; copiousoutput
+
+application/x-gunzip;   gzcat; copiousoutput
+application/x-tar-gz; gunzip -c %s | tar -tf - ; copiousoutput
+application/postscript; ps2ascii %s; copiousoutput
+
+application/pgp-keys;		pgp -f < %s ; copiousoutput
+
+# 让mutt调用 wvHtml 在自己的窗口 里直接显示转换的 doc 文档
+application/msword; wvHtml %s - | w3m -dump -T text/html;copiousoutput
+#text html
+text/html; w3m -dump -ppc 9 -I %{charset} -T text/html %s|uniq; copiousoutput
