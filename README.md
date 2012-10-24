@@ -1,7 +1,7 @@
 Including files
 =============
 
-    README			# this file
+     README			    # this file
     .mutt/dot_muttrc    # .muttrc, link this to ~/.muttrc
     .mutt/aliases		# there's a sample for building your alias
     .mutt/bindings.rc	# config key bindings
@@ -9,8 +9,11 @@ Including files
     .mutt/mailcap		# I get this copy from the sample file
     .mutt/postponed		# Use to store the delay mail
     .mutt/priv.rc       # dirs and non-public stuff, (hooks, alternates, ...),you can change it to youself
- 
-
+    .msmtprc            # msmtp config(发件配置文件)  
+    .procmailrc         # procmail config(过滤规则)
+    .getmail/getmail    # 收信脚本
+    .getmail/config/getmail.163     # 收信邮箱配置文件
+    .getmail/log        # 收信日志
 About
 =====
 
