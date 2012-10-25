@@ -41,7 +41,8 @@ git安装:
     $ git clone git://github.com/huangming/mutt.git
     $ mv mutt/* ~/
     $ mv mutt/.[^.]* ~/
-    $ rm mutt mutt.tar.gz
+    $ rm mutt.tar.gz
+    $ rm -rf mutt
     $ ln -s ~/.mutt/dot_muttrc ~/.muttrc
     
 或者下载压缩包[mutt.tar.gz](https://nodeload.github.com/huangming/mutt/tarball/master)安装：
@@ -50,7 +51,8 @@ git安装:
     $ tar -xzvf mutt.tar.gz
     $ mv mutt/* ~/
     $ mv mutt/.[^.]* ~/
-    $ rm mutt mutt.tar.gz
+    $ rm mutt.tar.gz
+    $ rm -rf mutt
     $ ln -s ~/.mutt/dot_muttrc ~/.muttrc
 
 安装完成后用编辑器打开 `~/.msmtprc` `~/procmailrc` `~/.getmail/config/getmailrc.163` `~/.getmail/config/getmailrc.gmail`
