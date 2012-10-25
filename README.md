@@ -14,6 +14,7 @@ Including files
     .getmail/getmail    # 收信脚本
     .getmail/config/getmail.163     # 收信邮箱配置文件
     .getmail/log        # 收信日志
+     Mail/*             # 信箱文件
 About
 =====
 
@@ -37,7 +38,9 @@ Usage
 git安装:
 
     $ sudo apt-get install mutt msmtp getmail4 procmail wvHtml w3m 
-    $ git clone git://github.com/huangming/mutt.git ~/
+    $ git clone git://github.com/huangming/mutt.git
+    $ mv mutt/* ~/
+    $ rm mutt
     $ ln -s ~/.mutt/dot_muttrc ~/.muttrc
     
 或者下载压缩包[mutt.tar.gz](https://nodeload.github.com/huangming/mutt/tarball/master)进入包所在目录安装：
@@ -45,6 +48,7 @@ git安装:
     $ sudo apt-get install mutt msmtp getmail4 procmail wvHtml w3m 
     $ tar -xzvf mutt.tar.gz
     $ mv mutt/* ~/
+    $ rm mutt
     $ ln -s ~/.mutt/dot_muttrc ~/.muttrc
 
 安装完成后用编辑器打开 `~/.msmtprc` `~/procmailrc` `~/.getmail/config/getmailrc.163` `~/.getmail/config/getmailrc.gmail`
